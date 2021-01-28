@@ -64,14 +64,12 @@ header {
 }
 
 .language {
-  float: left;
   color: inherit;
-  border-right: 1px solid #899397;
+  border-right: 2px solid #899397;
   padding-right: 20px;
 }
 
 .contact-us {
-  float: left;
   color: inherit;
   padding-left: 20px;
 }
@@ -84,6 +82,10 @@ header {
 
 .search-access-container {
   float: right;
+}
+
+.search-access-container > * {
+  margin: 0 10px;
 }
 
 .search-ico {
