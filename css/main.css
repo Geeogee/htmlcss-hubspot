@@ -1,0 +1,92 @@
+/* General and legos */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+
+/* Containers */
+
+.center-container {
+  width: 80%;
+  margin: 0 auto;
+}
+
+.text-container {
+  width: 50%;
+  /*test*/
+  background-color: rgba(255,255,255,.4);
+}
+
+header {
+  /* test */
+  background-color: red;
+}
+
+.login-bar {
+  /* test */
+  height: 75px;
+  background-color: red;
+  /* background-color: #f4f9fd; */
+}
+
+nav {
+  /* test */
+  height: 75px;
+  background-color: blue;
+  /* background-color: #FFF; */
+}
+
+.jumbotron {
+  position: relative;
+  /* test */
+  height: 500px;
+  background-color: green;
+  /* background-color: #fff2ee */
+}
+
+
+/* Main */
+
+main {
+  background-color: #f4f9fd;
+}
+
+
+.section-title {
+  /*test*/
+  background-color: red;
+  height: 400px;
+}
+
+.section-CRM {
+  /*test*/
+  background-color: blue;
+  height: 200px;
+}
+
+.section-hubs {
+  /*test*/
+  background-color: green;
+  height: 400px;
+}
+
+.section-leanGrow {
+  /*test*/
+  background-color: #00a4bc;
+  height: 600px;
+}
+
+.section-getStarted {
+  /*test*/
+  background-color: yellow;
+  height: 600px;
+}
+
+/* Footer */
+footer {
+  height: 600px;
+  background-color: #32495b;
+}
