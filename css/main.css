@@ -6,15 +6,41 @@
   box-sizing: border-box;
 }
 
+body {
+  font-family: "Nunito", sans-serif;
+}
+
+/* Clearfix */
+.row::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* I'm not a button*/
+.link-button {
+    text-decoration: none;
+    padding: 10px 10px;
+    border-radius: 5px;
+    font-weight: 600;
+}
+
+.orange-link {
+  background-color: #fe775a;
+  color: #FFF;
+}
+
+.white-link {
+  background-color: #FFF;
+  border: 1px solid #fe775a;
+  color: #fe775a;
+}
 
 /* Containers */
 
 .center-container {
   width: 80%;
   margin: 0 auto;
-  /*test*/
-  background-color: rgba(0,0,0,.4);
-  height: 100%;
 }
 
 .text-container {
@@ -23,16 +49,45 @@
   background-color: rgba(255,255,255,.4);
 }
 
+/* Header */
 header {
   /* test */
   background-color: red;
 }
 
+/*Language - Contact - Login bar*/
 .login-bar {
-  /* test */
+  color: #32495b;
   height: 75px;
-  background-color: red;
-  /* background-color: #f4f9fd; */
+  line-height: 75px;
+  background-color: #f4f9fd;
+}
+
+.language {
+  float: left;
+  color: inherit;
+  border-right: 1px solid #899397;
+  padding-right: 20px;
+}
+
+.contact-us {
+  float: left;
+  color: inherit;
+  padding-left: 20px;
+}
+
+.contact-us a {
+  color: inherit;
+  text-decoration: none;
+  text-transform: capitalize;
+}
+
+.search-access-container {
+  float: right;
+}
+
+.search-ico {
+  color: #02a6bf;
 }
 
 nav {
