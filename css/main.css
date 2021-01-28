@@ -12,10 +12,13 @@
 .center-container {
   width: 80%;
   margin: 0 auto;
+  /*test*/
+  background-color: rgba(0,0,0,.4);
+  height: 100%;
 }
 
 .text-container {
-  width: 50%;
+  width: 40%;
   /*test*/
   background-color: rgba(255,255,255,.4);
 }
@@ -51,7 +54,8 @@ nav {
 /* Main */
 
 main {
-  background-color: #f4f9fd;
+  background-color: #000;
+  /* background-color: #f4f9fd; */
 }
 
 
