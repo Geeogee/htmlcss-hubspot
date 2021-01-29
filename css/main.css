@@ -111,6 +111,14 @@ body {
   width: 70%;
 }
 
+.w50 {
+  width: 50%
+}
+
+.w25 {
+  width: 25%;
+}
+
 /* Header */
 .fixed-menu {
   position: fixed;
@@ -371,10 +379,6 @@ main {
 }
 
 .section-leanGrow .column {
-  width: 25%;
-}
-
-.section-leanGrow .column {
   border-right: 1px solid #FFF;
 }
 
@@ -399,19 +403,63 @@ main {
   border-right: 0;
 }
 
+/* Section get started */
 
 .section-getStarted {
-  /*test*/
-  background-color: yellow;
-  height: 600px;
+  padding: 30px 0;
+  background-color: #FFF;
 }
 
-
-.section-getStarted .center-container {
-  height: 100%;
-  background-color: green;
+.section-getStarted .text-container {
+  width: 60%;
+  margin: 0 auto;
 }
 
+.section-getStarted .logo-container {
+  width: 70%;
+  margin-left: 50px;
+}
+
+.section-getStarted .customer-logo {
+  margin: 10px 20px 10px 0;
+  width: calc(100% / 4 - 20px);
+  height: 35px;
+  float: left;
+  position: relative;
+}
+
+.customer-logo > img {
+  max-width: 100%;
+}
+
+.section-getStarted .column.w50 > .text-container {
+  width: 80%;
+  margin: 0;
+}
+
+.section-getStarted .column.w50 .largeTitleFont {
+  text-transform: capitalize;
+  margin-top: 80px;
+
+}
+
+.section-getStarted .column.w50 .text-container > * {
+  margin-bottom: 30px;
+}
+
+.section-getStarted .column.w50 .mediumFont {
+  line-height: 28px;
+}
+
+.section-getStarted .column.w50 .text-container a {
+  display: inline-block;
+}
+
+.section-getStarted .column.w50 img {
+  height: 400px;
+  float: right;
+
+}
 
 /* Footer */
 footer {
