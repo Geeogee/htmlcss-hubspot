@@ -74,6 +74,14 @@ body {
   font-weight: 900;
 }
 
+/* Vertical align */
+.valign-center {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+}
+
 /* Containers */
 .center-container {
   width: 80%;
@@ -359,8 +367,7 @@ main {
 }
 
 .section-leanGrow .largeTitleFont {
-  padding: 0 10px;
-  margin-bottom: 30px;
+
 }
 
 .section-leanGrow .column {
@@ -374,10 +381,15 @@ main {
 
 .section-leanGrow .top-column,.section-leanGrow .bot-column {
   min-height: 200px;
+  position: relative;
 }
 
 .section-leanGrow .top-column {
   border-bottom: 1px solid #FFF;
+}
+
+.section-leanGrow div.valign-center {
+  text-align: center;
 }
 
 
