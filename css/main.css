@@ -349,14 +349,39 @@ main {
 .section-leanGrow {
   /*test*/
   background-image: linear-gradient(45deg, #00a6bb, #00bba7);
-  height: 600px;
   color: #FFF;
 }
 
 .section-leanGrow .text-container {
+  padding: 30px 0;
   width: 100%;
   text-align: center;
 }
+
+.section-leanGrow .largeTitleFont {
+  padding: 0 10px;
+  margin-bottom: 30px;
+}
+
+.section-leanGrow .column {
+  width: 25%;
+  /* background-color: red; */
+}
+
+.section-leanGrow .column {
+  border-right: 1px solid #FFF;
+}
+
+.section-leanGrow .top-column,.section-leanGrow .bot-column {
+  min-height: 200px;
+}
+
+.section-leanGrow .top-column {
+  border-bottom: 1px solid #FFF;
+}
+
+
+
 
 .section-getStarted {
   /*test*/
