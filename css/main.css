@@ -42,7 +42,7 @@ body {
 }
 
 .big-link {
-  padding: 20px 20px;
+  padding: 20px 30px;
 }
 
 /* Fonts */
@@ -50,20 +50,25 @@ body {
   color: #32495b;
 }
 
-.largeFont {
-  font-size: calc(30px + 0.5vw);
+.smallFont {
+  font-size: calc(6px + 0.5vw);
 }
 
 .mediumFont {
   font-size: calc(10px + 0.5vw);
 }
 
-.smallFont {
-  font-size: calc(6px + 0.5vw);
+.mediumTitleFont {
+  font-size: calc(20px + 0.5vw);
+  font-weight: 900;
+}
+
+.largeTitleFont {
+  font-size: calc(30px + 0.5vw);
+  font-weight: 900;
 }
 
 /* Containers */
-
 .center-container {
   width: 80%;
   margin: 0 auto;
@@ -73,8 +78,27 @@ body {
   width: 35%;
 }
 
-/* Header */
+.box-image {
+  width: 150px;
+}
 
+.box-section {
+  padding: 60px 10%;
+  background-color: #FFF;
+  border-radius: 5px;
+  box-shadow: 0 0 5px rgba(0,0,0,.2);
+}
+
+/* Widths */
+.w30 {
+  width: 30%;
+}
+
+.w70 {
+  width: 70%;
+}
+
+/* Header */
 .fixed-menu {
   position: fixed;
   z-index: 99;
@@ -156,7 +180,6 @@ img#logo {
 }
 
 /* Jumbotron */
-
 .jumbotron {
   height: 700px;
   width: 100%;
@@ -194,7 +217,6 @@ h1#mainTitle {
 
 
 /* Main */
-
 main {
   background-color: #f4f9fd;
 }
@@ -215,10 +237,46 @@ main {
 }
 
 /* Section with horizontal block */
-.section-CRM {
-  /*test*/
-  background-color: blue;
-  height: 200px;
+
+.section-CRM .column.w30 {
+  text-align: center;
+}
+
+.section-CRM .box-image {
+  margin: 0 auto 30px;
+}
+
+.section-CRM .column.w70 .mediumTitleFont {
+  margin-bottom: 30px;
+}
+
+.section-CRM .column.w70 p.mediumFont {
+  line-height: 28px;
+  margin-bottom: 15px;
+}
+
+.section-CRM .column.w70 h4 {
+  text-transform: uppercase;
+  display: inline-block;
+  padding-right: 40px;
+  font-weight: 900;
+  margin-bottom: 15px;
+}
+
+.section-CRM hr {
+  display: inline-block;
+  width: 60%;
+}
+
+.section-CRM li {
+  float: left;
+  list-style-type: none;
+  margin-right: 20px;
+}
+
+.section-CRM .fa-check-circle {
+  margin-right: 5px;
+  color: #fe775a;
 }
 
 .section-hubs {
