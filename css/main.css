@@ -46,11 +46,11 @@ body {
 }
 
 .mediumFont {
-  font-size: 16px;
+  font-size: calc(10px + 0.5vw);
 }
 
 .smallFont {
-  font-size: 12px;
+  font-size: calc(6px + 0.5vw);
 }
 
 /* Containers */
@@ -144,6 +144,7 @@ img#logo {
   background-size: cover;
   background-repeat: no-repeat;
   background-position: right;
+  border-bottom: 4px solid #33475b;
 }
 
 .jumbotron .text-container > * {
