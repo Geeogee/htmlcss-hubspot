@@ -465,4 +465,23 @@ main {
 footer {
   height: 600px;
   background-color: #32495b;
+  color: #cbd6e2;
+}
+
+footer .mediumFont {
+  color: #FFF;
+}
+
+footer .w25 {
+  height: 200px;
+  background-color: green;
+}
+
+footer li {
+  list-style-type: none;
+}
+
+footer .social-links li {
+  float: left;
+  margin-right: 10px;
 }
