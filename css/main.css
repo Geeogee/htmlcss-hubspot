@@ -355,7 +355,7 @@ main {
 
 /* Lean and grow section */
 .section-leanGrow {
-  /*test*/
+  padding: 60px 0;
   background-image: linear-gradient(45deg, #00a6bb, #00bba7);
   color: #FFF;
 }
@@ -367,12 +367,11 @@ main {
 }
 
 .section-leanGrow .largeTitleFont {
-
+  margin-bottom: 20px;
 }
 
 .section-leanGrow .column {
   width: 25%;
-  /* background-color: red; */
 }
 
 .section-leanGrow .column {
@@ -392,7 +391,13 @@ main {
   text-align: center;
 }
 
+.section-leanGrow div.valign-center > * {
+  margin-bottom: 10px;
+}
 
+.section-leanGrow .column:last-child {
+  border-right: 0;
+}
 
 
 .section-getStarted {
@@ -400,6 +405,13 @@ main {
   background-color: yellow;
   height: 600px;
 }
+
+
+.section-getStarted .center-container {
+  height: 100%;
+  background-color: green;
+}
+
 
 /* Footer */
 footer {
