@@ -68,6 +68,12 @@ body {
   font-weight: 900;
 }
 
+.mediumSubtitleFont {
+  font-size: calc(12px + 0.5vw);
+  text-transform: uppercase;
+  font-weight: 900;
+}
+
 /* Containers */
 .center-container {
   width: 80%;
@@ -83,7 +89,6 @@ body {
 }
 
 .box-section {
-  padding: 60px 10%;
   background-color: #FFF;
   border-radius: 5px;
   box-shadow: 0 0 5px rgba(0,0,0,.2);
@@ -223,7 +228,7 @@ main {
 
 /* Section with title */
 .section-title {
-  padding: 60px 20%;
+  padding: 30px 20%;
   text-align: center;
 }
 
@@ -237,6 +242,12 @@ main {
 }
 
 /* Section with horizontal block */
+/* 30% block */
+
+.section-CRM {
+  padding: 80px 10%;
+  margin: 30px 0;
+}
 
 .section-CRM .column.w30 {
   text-align: center;
@@ -246,6 +257,11 @@ main {
   margin: 0 auto 30px;
 }
 
+.section-CRM .column.w30 a {
+  display: inline-block;
+}
+
+/* 70% block */
 .section-CRM .column.w70 .mediumTitleFont {
   margin-bottom: 30px;
 }
@@ -255,11 +271,9 @@ main {
   margin-bottom: 15px;
 }
 
-.section-CRM .column.w70 h4 {
-  text-transform: uppercase;
+.section-CRM .column.w70 .mediumSubtitleFont {
   display: inline-block;
-  padding-right: 40px;
-  font-weight: 900;
+  padding-right: 30px;
   margin-bottom: 15px;
 }
 
@@ -279,16 +293,69 @@ main {
   color: #fe775a;
 }
 
+
+/* Section with vertical boxes */
 .section-hubs {
-  /*test*/
-  background-color: green;
-  height: 400px;
+  margin: 30px 0;
 }
 
+.section-hubs .column.w30 {
+  text-align: center;
+  padding: 30px;
+}
+
+.section-hubs .top-column {
+  min-height: 350px;
+}
+
+.middle {
+  margin: 0 5%;
+}
+
+.section-hubs .box-image {
+  min-height: 180px;
+  margin: 0 auto;
+}
+
+.section-hubs .top-column > * {
+  margin-bottom: 30px;
+}
+
+.section-hubs hr {
+  margin: 15px 0 15px;
+}
+
+.section-hubs .bot-column > * {
+  margin-bottom: 30px;
+}
+
+.section-hubs .bot-column li {
+  text-align: left;
+  list-style-type: none;
+}
+
+.section-hubs .bot-column .fa-check-circle {
+  margin-right: 5px;
+  color: #fe775a;
+}
+
+.section-hubs .bot-column a {
+  margin: 0 auto;
+  display: inline-block;
+}
+
+
+/* Lean and grow section */
 .section-leanGrow {
   /*test*/
-  background-color: #00a4bc;
+  background-image: linear-gradient(45deg, #00a6bb, #00bba7);
   height: 600px;
+  color: #FFF;
+}
+
+.section-leanGrow .text-container {
+  width: 100%;
+  text-align: center;
 }
 
 .section-getStarted {
