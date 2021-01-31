@@ -120,6 +120,10 @@ body {
   width: 70%;
 }
 
+.w100 {
+  width: 100%;
+}
+
 /* Header */
 .fixed-menu {
   position: fixed;
@@ -183,6 +187,10 @@ nav {
   background-color: #FFF;
 }
 
+nav .center-container {
+  position: relative;
+}
+
 img#logo {
   height: 30px;
   vertical-align: middle;
@@ -190,7 +198,6 @@ img#logo {
 
 .nav-links {
   float: right;
-  position: relative;
 }
 
 .nav-links li {
@@ -209,26 +216,59 @@ img#logo {
   padding-left: 10px;
 }
 
-.nav-sub-links {
-  width: 100%;
-  height: 300px;
+.nav-dropdown-links {
+  min-height: 300px;
+  background-color: #FFF;
+  line-height: normal;
+  border: 1px solid #cbd6e2;
   position: absolute;
   left: 5px;
-  display: none;
+  opacity: 0;
 }
 
-.nav-links li:hover .nav-sub-links {
-  display: block;
+.nav-links li:hover .nav-dropdown-links {
+  opacity: 1;
 }
 
-.nav-sub-links .column.w30 {
-  height: 100%;
-  background-color: yellow;
+.nav-links li:hover .triangle-label {
+  opacity: 1;
 }
 
-.nav-sub-links .column.w70 {
-  height: 100%;
-  background-color: green;
+.nav-dropdown-links .column.w30 {
+  background-color: #f5f8fa;
+  min-height: 300px;
+}
+
+#about {
+  position: relative;
+}
+
+.small-dropdown {
+  min-height: initial;
+  position: absolute;
+  padding: 10px 0;
+}
+
+.small-dropdown ul > li {
+  padding: 5px 0;
+}
+
+
+/* Triangle label on small dropdown */
+.triangle-label {
+  height: 20px;
+  width: 20px;
+  background-color: red;
+  position: absolute;
+  top: 65px;
+  left: 80%;
+  background-color: #FFF;
+  border: 1px solid #cbd6e2;
+  border-right: 0;
+  border-bottom: 0;
+  z-index: 2;
+  transform: rotate(45deg);
+  opacity: 0;
 }
 
 
