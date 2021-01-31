@@ -28,6 +28,11 @@ body {
     padding: 10px 10px;
     border-radius: 5px;
     font-weight: 700;
+    display: inline-block;
+}
+
+.big-link {
+  padding: 20px 30px;
 }
 
 .orange-link {
@@ -41,11 +46,7 @@ body {
   color: #fe775a;
 }
 
-.big-link {
-  padding: 20px 30px;
-}
-
-/* Fonts */
+/* Typography */
 .darkGreyFont {
   color: #32495b;
 }
@@ -103,20 +104,21 @@ body {
 }
 
 /* Widths */
-.w30 {
-  width: 30%;
+
+.w25 {
+  width: 25%;
 }
 
-.w70 {
-  width: 70%;
+.w30 {
+  width: 30%;
 }
 
 .w50 {
   width: 50%
 }
 
-.w25 {
-  width: 25%;
+.w70 {
+  width: 70%;
 }
 
 /* Header */
@@ -167,7 +169,14 @@ body {
   color: #02a6bf;
 }
 
+/* Links in login nav bar are setted in display inline
+because of the high line-height (so they't aren't full bar height)*/
+.search-access-container a {
+  display: inline;
+}
+
 /* Nav */
+
 nav {
   min-width: 700px;
   height: 75px;
@@ -232,11 +241,6 @@ h1#mainTitle {
   line-height: 28px;
 }
 
-.jumbotron .text-container a {
-  display: inline-block;
-}
-
-
 /* Main */
 main {
   background-color: #f4f9fd;
@@ -262,7 +266,7 @@ main {
 
 .section-CRM {
   padding: 80px 10%;
-  margin: 30px 0;
+  margin-bottom: 30px;
 }
 
 .section-CRM .column.w30 {
@@ -271,10 +275,6 @@ main {
 
 .section-CRM .box-image {
   margin: 0 auto 30px;
-}
-
-.section-CRM .column.w30 a {
-  display: inline-block;
 }
 
 /* 70% block */
@@ -311,6 +311,7 @@ main {
 
 
 /* Section with vertical boxes */
+
 .section-hubs {
   margin: 30px 0;
 }
@@ -333,16 +334,13 @@ main {
   margin: 0 auto;
 }
 
-.section-hubs .top-column > * {
+/* Sets the margin between the elements inside the top and bottom part of the columns */
+.section-hubs .top-column > *, .section-hubs .bot-column > * {
   margin-bottom: 30px;
 }
 
 .section-hubs hr {
   margin: 15px 0 15px;
-}
-
-.section-hubs .bot-column > * {
-  margin-bottom: 30px;
 }
 
 .section-hubs .bot-column li {
@@ -357,13 +355,11 @@ main {
 
 .section-hubs .bot-column a {
   margin: 0 auto;
-  display: inline-block;
 }
-
 
 /* Lean and grow section */
 .section-leanGrow {
-  padding: 60px 0;
+  padding: 30px 0;
   background-image: linear-gradient(45deg, #00a6bb, #00bba7);
   color: #FFF;
 }
@@ -382,9 +378,9 @@ main {
   border-right: 1px solid #FFF;
 }
 
-.section-leanGrow .top-column,.section-leanGrow .bot-column {
+.section-leanGrow .top-column, .section-leanGrow .bot-column {
   min-height: 200px;
-  position: relative;
+  position: relative; /* .valign-center is absolute */
 }
 
 .section-leanGrow .top-column {
@@ -416,7 +412,6 @@ main {
 }
 
 .section-getStarted .logo-container {
-  width: 70%;
   margin-left: 50px;
 }
 
@@ -440,7 +435,6 @@ main {
 .section-getStarted .column.w50 .largeTitleFont {
   text-transform: capitalize;
   margin-top: 80px;
-
 }
 
 .section-getStarted .column.w50 .text-container > * {
@@ -451,14 +445,9 @@ main {
   line-height: 28px;
 }
 
-.section-getStarted .column.w50 .text-container a {
-  display: inline-block;
-}
-
 .section-getStarted .column.w50 img {
   height: 400px;
   float: right;
-
 }
 
 /* Footer */
@@ -488,16 +477,14 @@ footer .social-links li {
   margin-right: 30px;
 }
 
-.gray-link {
+footer .gray-link {
   background-color: #dadee0;
   color: #32495b;
-  display: inline-block;
 }
 
-
-.footer-languages {
+footer .footer-languages {
   width: 40%;
-  margin: 0 auto;
+  margin: 30px auto;
 }
 
 footer .footer-languages li{
@@ -514,4 +501,9 @@ footer hr {
 .footer-links li {
   float: right;
   margin-left: 20px;
+}
+
+footer .copyright {
+  padding: 30px 0;
+  font-weight: bold;
 }
