@@ -1,0 +1,532 @@
+/* General and legos */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Lato", sans-serif;
+}
+
+/* Clearfix */
+.row::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+/* Floated column */
+.column {
+  float: left;
+}
+
+/* I'm not a button*/
+.link-button {
+    text-decoration: none;
+    padding: 10px 10px;
+    border-radius: 5px;
+    font-weight: 700;
+    display: inline-block;
+}
+
+.big-link {
+  padding: 20px 30px;
+}
+
+.orange-link {
+  background-color: #fe775a;
+  color: #FFF;
+}
+
+.white-link {
+  background-color: #FFF;
+  border: 1px solid #fe775a;
+  color: #fe775a;
+}
+
+/* Typography */
+.darkGreyFont {
+  color: #32495b;
+}
+
+.smallFont {
+  font-size: calc(6px + 0.5vw);
+}
+
+.mediumFont {
+  font-size: calc(10px + 0.5vw);
+}
+
+.mediumTitleFont {
+  font-size: calc(20px + 0.5vw);
+  font-weight: 900;
+}
+
+.largeTitleFont {
+  font-size: calc(30px + 0.5vw);
+  font-weight: 900;
+}
+
+.mediumSubtitleFont {
+  font-size: calc(12px + 0.5vw);
+  text-transform: uppercase;
+  font-weight: 900;
+}
+
+/* Vertical align */
+.valign-center {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+}
+
+/* Containers */
+.center-container {
+  width: 80%;
+  margin: 0 auto;
+}
+
+.text-container {
+  width: 35%;
+}
+
+.box-image {
+  width: 150px;
+}
+
+.box-section {
+  background-color: #FFF;
+  border-radius: 5px;
+  box-shadow: 0 0 5px rgba(0,0,0,.2);
+}
+
+/* Widths */
+
+.w25 {
+  width: 25%;
+}
+
+.w30 {
+  width: 30%;
+}
+
+.w50 {
+  width: 50%
+}
+
+.w70 {
+  width: 70%;
+}
+
+/* Header */
+.fixed-menu {
+  position: fixed;
+  z-index: 99;
+  width: 100%;
+  top: 0;
+  left: 0;
+}
+
+/*Language - Contact - Login bar*/
+.login-bar {
+  min-width: 700px;
+  color: inherit;
+  height: 75px;
+  line-height: 75px;
+  background-color: #f4f9fd;
+  border-bottom: 1px solid #6e808d;
+}
+
+.language {
+  color: inherit;
+  border-right: 2px solid #899397;
+  padding-right: 20px;
+}
+
+.contact-us {
+  color: inherit;
+  padding-left: 20px;
+}
+
+.contact-us a {
+  color: inherit;
+  text-decoration: none;
+  text-transform: capitalize;
+}
+
+.search-access-container {
+  float: right;
+}
+
+.search-access-container > * {
+  margin: 0 10px;
+}
+
+.search-ico {
+  color: #02a6bf;
+}
+
+/* Links in login nav bar are setted in display inline
+because of the high line-height (so they't aren't full bar height)*/
+.search-access-container a {
+  display: inline;
+}
+
+/* Nav */
+
+nav {
+  min-width: 700px;
+  height: 75px;
+  line-height: 75px;
+  background-color: #FFF;
+}
+
+img#logo {
+  height: 30px;
+  vertical-align: middle;
+}
+
+.nav-links {
+  float: right;
+  position: relative;
+}
+
+.nav-links li {
+  margin: 0 10px;
+  float: left;
+  list-style-type: none;
+}
+
+.nav-links a {
+  color: inherit;
+  text-decoration: none;
+  font-weight: 700;
+}
+
+.nav-links li > .fa-angle-down {
+  padding-left: 10px;
+}
+
+.nav-sub-links {
+  width: 100%;
+  height: 300px;
+  position: absolute;
+  left: 5px;
+  display: none;
+}
+
+.nav-links li:hover .nav-sub-links {
+  display: block;
+}
+
+.nav-sub-links .column.w30 {
+  height: 100%;
+  background-color: yellow;
+}
+
+.nav-sub-links .column.w70 {
+  height: 100%;
+  background-color: green;
+}
+
+
+/* Jumbotron */
+.jumbotron {
+  height: 700px;
+  width: 100%;
+  margin-top: 150px;
+  position: relative;
+  background-image: url("../../img/jumbotron.png");
+  background-size: 100vw 100%;
+  background-repeat: no-repeat;
+  background-position: right;
+}
+
+.jumbotron .text-container > * {
+  margin-bottom: 30px;
+}
+
+.jumbotron .text-container {
+  position: absolute;
+  top: 80px;
+  min-width: 350px;
+}
+
+h1#mainTitle {
+  font-size: calc(40px + 0.5vw);
+  font-weight: 900;
+  letter-spacing: -2px;
+}
+
+.jumbotron .mediumFont {
+  line-height: 28px;
+}
+
+/* Main */
+main {
+  background-color: #f4f9fd;
+}
+
+/* Section with title */
+.section-title {
+  padding: 30px 20%;
+  text-align: center;
+}
+
+.section-title img {
+  max-width: 250px;
+}
+
+.section-title .largeFont {
+  text-transform: capitalize;
+  font-weight: 900;
+}
+
+/* Section with horizontal block */
+/* 30% block */
+
+.section-CRM {
+  padding: 80px 10%;
+  margin-bottom: 30px;
+}
+
+.section-CRM .column.w30 {
+  text-align: center;
+}
+
+.section-CRM .box-image {
+  margin: 0 auto 30px;
+}
+
+/* 70% block */
+.section-CRM .column.w70 .mediumTitleFont {
+  margin-bottom: 30px;
+}
+
+.section-CRM .column.w70 p.mediumFont {
+  line-height: 28px;
+  margin-bottom: 15px;
+}
+
+.section-CRM .column.w70 .mediumSubtitleFont {
+  display: inline-block;
+  padding-right: 30px;
+  margin-bottom: 15px;
+}
+
+.section-CRM hr {
+  display: inline-block;
+  width: 60%;
+}
+
+.section-CRM li {
+  float: left;
+  list-style-type: none;
+  margin-right: 20px;
+}
+
+.section-CRM .fa-check-circle {
+  margin-right: 5px;
+  color: #fe775a;
+}
+
+
+/* Section with vertical boxes */
+
+.section-hubs {
+  margin: 30px 0;
+}
+
+.section-hubs .column.w30 {
+  text-align: center;
+  padding: 30px;
+}
+
+.section-hubs .top-column {
+  min-height: 350px;
+}
+
+.middle {
+  margin: 0 5%;
+}
+
+.section-hubs .box-image {
+  min-height: 180px;
+  margin: 0 auto;
+}
+
+/* Sets the margin between the elements inside the top and bottom part of the columns */
+.section-hubs .top-column > *, .section-hubs .bot-column > * {
+  margin-bottom: 30px;
+}
+
+.section-hubs hr {
+  margin: 15px 0 15px;
+}
+
+.section-hubs .bot-column li {
+  text-align: left;
+  list-style-type: none;
+}
+
+.section-hubs .bot-column .fa-check-circle {
+  margin-right: 5px;
+  color: #fe775a;
+}
+
+.section-hubs .bot-column a {
+  margin: 0 auto;
+}
+
+/* Lean and grow section */
+.section-leanGrow {
+  padding: 30px 0;
+  background-image: linear-gradient(45deg, #00a6bb, #00bba7);
+  color: #FFF;
+}
+
+.section-leanGrow .text-container {
+  padding: 30px 0;
+  width: 100%;
+  text-align: center;
+}
+
+.section-leanGrow .largeTitleFont {
+  margin-bottom: 20px;
+}
+
+.section-leanGrow .column {
+  border-right: 1px solid #FFF;
+}
+
+.section-leanGrow .top-column, .section-leanGrow .bot-column {
+  min-height: 200px;
+  position: relative; /* .valign-center is absolute */
+}
+
+.section-leanGrow .top-column {
+  border-bottom: 1px solid #FFF;
+}
+
+.section-leanGrow div.valign-center {
+  text-align: center;
+}
+
+.section-leanGrow div.valign-center > * {
+  margin-bottom: 10px;
+}
+
+.section-leanGrow .column:last-child {
+  border-right: 0;
+}
+
+/* Section get started */
+
+.section-getStarted {
+  padding: 30px 0;
+  background-color: #FFF;
+}
+
+.section-getStarted .text-container {
+  width: 60%;
+  margin: 0 auto;
+}
+
+.section-getStarted .logo-container {
+  margin-left: 50px;
+}
+
+.section-getStarted .customer-logo {
+  margin: 10px 20px 10px 0;
+  width: calc(100% / 4 - 20px);
+  height: 35px;
+  float: left;
+  position: relative;
+}
+
+.customer-logo > img {
+  max-width: 100%;
+}
+
+.section-getStarted .column.w50 > .text-container {
+  width: 80%;
+  margin: 0;
+}
+
+.section-getStarted .column.w50 .largeTitleFont {
+  text-transform: capitalize;
+  margin-top: 80px;
+}
+
+.section-getStarted .column.w50 .text-container > * {
+  margin-bottom: 30px;
+}
+
+.section-getStarted .column.w50 .mediumFont {
+  line-height: 28px;
+}
+
+.section-getStarted .column.w50 img {
+  height: 400px;
+  float: right;
+}
+
+/* Footer */
+footer {
+  background-color: #32495b;
+  color: #cbd6e2;
+  padding-top: 30px;
+}
+
+footer .mediumFont {
+  color: #FFF;
+  margin-bottom: 20px;
+}
+
+footer li {
+  list-style-type: none;
+  margin-bottom: 15px;
+}
+
+footer li a {
+  color: #dadee0;
+  text-decoration: none;
+}
+
+footer .social-links li {
+  float: left;
+  margin-right: 30px;
+}
+
+footer .gray-link {
+  background-color: #dadee0;
+  color: #32495b;
+}
+
+footer .footer-languages {
+  width: 40%;
+  margin: 30px auto;
+}
+
+footer .footer-languages li{
+  float: left;
+  margin-right: 20px;
+}
+
+footer hr {
+  border: 0;
+  border-bottom: 1px solid #dadee0;
+  padding-bottom: 20px;
+}
+
+.footer-links li {
+  float: right;
+  margin-left: 20px;
+}
+
+footer .copyright {
+  padding: 30px 0;
+  font-weight: bold;
+}
