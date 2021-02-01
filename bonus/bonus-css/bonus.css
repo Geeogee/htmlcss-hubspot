@@ -614,7 +614,7 @@ footer .copyright {
 }
 
 /* HubBot */
-
+/* Button fixed */
 .fix-hubBot {
   position: fixed;
   bottom: 20px;
@@ -631,6 +631,7 @@ footer .copyright {
   color: #FFF;
 }
 
+/* Menu that opens when click or hover */
 .fix-hubBot .help-menu {
   height: 460px;
   width: 360px;
@@ -643,6 +644,7 @@ footer .copyright {
   display: none;
 }
 
+/* Title of the help menu*/
 .help-menu .help-title {
   position: relative;
   height: 70px;
@@ -674,6 +676,8 @@ footer .copyright {
   top: 40px;
 }
 
+/* Chat */
+
 .help-menu .help-chat {
   height: 230px;
   position: relative;
@@ -699,6 +703,7 @@ footer .copyright {
   text-decoration: underline;
 }
 
+/* Form for chat */
 .help-menu .help-form {
   background-color: #FFF;
   border-top: 2px solid #eaf0f6;
@@ -778,14 +783,15 @@ footer .copyright {
   text-decoration: underline;
 }
 
+/* Simulates mouse click */
 .veryBigCheckbox {
   position: fixed;
   bottom: 20px;
   right: 20px;
-  z-index: 999;
+  z-index: 999; /* I'm on the top */
   width: 60px;
   height: 60px;
-  opacity: 0;
+  opacity: 0; /* But you can't see me John Cena tuturutu */
 }
 
 /*The checkbox (ID) selects the adiacent div (.card.front) */
