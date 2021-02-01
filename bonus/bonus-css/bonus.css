@@ -133,6 +133,60 @@ body {
   left: 0;
 }
 
+/* Dropdown menus*/
+
+.nav-dropdown-links {
+  min-height: 300px;
+  background-color: #FFF;
+  line-height: normal;
+  border: 1px solid #cbd6e2;
+  position: absolute;
+  left: 5px;
+  opacity: 0;
+}
+
+.nav-dropdown-links li {
+  list-style-type: none;
+}
+
+.small-dropdown {
+  min-height: initial;
+  position: absolute;
+  padding: 10px 10;
+  z-index: 2;
+  font-weight: bold;
+}
+
+.small-dropdown ul > li {
+  padding: 5px 0;
+}
+
+
+/* When borders in a div with 0 height meet, they ave triangular transform. Color trasparent is for borders that are useless, the border that we use has got a color */
+.triangle-label-border {
+    border-right: 11px solid transparent;
+    border-left: 11px solid transparent;
+    border-bottom: 11px solid #cbd6e2;
+    height: 0;
+    width: 0;
+    position: absolute;
+    top: -10px;
+    right: 10px;
+    z-index: 1;
+}
+
+.triangle-label {
+  border-right: 10px solid transparent;
+  border-left: 10px solid transparent;
+  border-bottom: 10px solid #FFF;
+  height: 0;
+  width: 0;
+  position: absolute;
+  top: -9px;
+  right: 11px;
+  z-index: 2;
+}
+
 /*Language - Contact - Login bar*/
 .login-bar {
   min-width: 700px;
@@ -147,6 +201,22 @@ body {
   color: inherit;
   border-right: 2px solid #899397;
   padding-right: 20px;
+  position: relative;
+}
+
+.language a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.login-bar .language:hover .nav-dropdown-links {
+  opacity: 1;
+}
+
+.language .small-dropdown {
+  top: 48px;
+  padding: 0 10px;
+  font-weight: bold;
 }
 
 .contact-us {
@@ -160,9 +230,18 @@ body {
   text-transform: capitalize;
 }
 
+/* Container with login link */
 .search-access-container {
   float: right;
 }
+
+/* Links in login nav bar are setted in display inline
+because of the high line-height (so they't aren't full bar height)*/
+.search-access-container a {
+  display: inline;
+  text-decoration: none;
+}
+
 
 .search-access-container > * {
   margin: 0 10px;
@@ -172,11 +251,6 @@ body {
   color: #02a6bf;
 }
 
-/* Links in login nav bar are setted in display inline
-because of the high line-height (so they't aren't full bar height)*/
-.search-access-container a {
-  display: inline;
-}
 
 /* Nav */
 
@@ -202,6 +276,7 @@ img#logo {
 
 .nav-links li {
   margin: 0 10px;
+  min-width: 80px;
   float: left;
   list-style-type: none;
 }
@@ -216,21 +291,15 @@ img#logo {
   padding-left: 10px;
 }
 
-.nav-dropdown-links {
-  min-height: 300px;
-  background-color: #FFF;
-  line-height: normal;
-  border: 1px solid #cbd6e2;
-  position: absolute;
-  left: 5px;
-  opacity: 0;
+#about {
+  position: relative;
+}
+
+#partners {
+  position: relative;
 }
 
 .nav-links li:hover .nav-dropdown-links {
-  opacity: 1;
-}
-
-.nav-links li:hover .triangle-label {
   opacity: 1;
 }
 
@@ -238,65 +307,6 @@ img#logo {
   background-color: #f5f8fa;
   min-height: 300px;
 }
-
-#about {
-  position: relative;
-}
-
-.small-dropdown {
-  min-height: initial;
-  position: absolute;
-  padding: 10px 0;
-}
-
-.small-dropdown ul > li {
-  padding: 5px 0;
-}
-
-
-/* Triangle label on small dropdown */
-/* .triangle-label {
-  height: 20px;
-  width: 20px;
-  background-color: red;
-  position: absolute;
-  top: 65px;
-  left: 80%;
-  background-color: #FFF;
-  border: 1px solid #cbd6e2;
-  border-right: 0;
-  border-bottom: 0;
-  z-index: 2;
-  transform: rotate(45deg);
-  opacity: 0;
-} */
-
-.triangle-label-border {
-    border-right: 11px solid transparent;
-    border-left: 11px solid transparent;
-    border-bottom: 11px solid #cbd6e2;
-    height: 0;
-    width: 0;
-    position: absolute;
-    top: -10px;
-    right: 10px;
-    z-index: 1;
-}
-
-.triangle-label {
-  border-right: 10px solid transparent;
-  border-left: 10px solid transparent;
-  border-bottom: 10px solid #FFF;
-  height: 0;
-  width: 0;
-  position: absolute;
-  top: -9px;
-  right: 11px;
-  z-index: 2;
-}
-
-
-
 
 /* Jumbotron */
 .jumbotron {
@@ -595,4 +605,32 @@ footer hr {
 footer .copyright {
   padding: 30px 0;
   font-weight: bold;
+}
+
+/* HubBot */
+
+.fix-hubBot {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  background-color: #425b76;
+  box-shadow: 0 0 5px rgba(0,0,0,.3);
+}
+
+.fix-hubBot .fa-comment-alt {
+  font-size: 30px;
+  color: #FFF;
+}
+
+
+.fix-hubBot .help-menu {
+  height: 400px;
+  width: 400px;
+  background-color: red;
+  position: absolute;
+  left: -330px;
+  top: -410px;
 }
