@@ -168,7 +168,7 @@ body {
 }
 
 
-/* When borders in a div with 0 height meet, they ave triangular transform. Color trasparent is for borders that are useless, the border that we use has got a color */
+/* In a div with height: 0, when borders meet they have triangular form. Borders that are useless have transparent background-color. The one we use has got a background color. */
 .triangle-label-border {
     border-right: 11px solid transparent;
     border-left: 11px solid transparent;
@@ -632,6 +632,13 @@ footer .copyright {
 }
 
 /* Menu that opens when click or hover */
+
+.icon {
+  background-image: url("https://static.hsappstatic.net/bots-ui-app/ex/bot-avatar.jpg");
+  background-size: cover;
+  border-radius: 50%;
+}
+
 .fix-hubBot .help-menu {
   height: 460px;
   width: 360px;
@@ -656,11 +663,8 @@ footer .copyright {
 .help-title .icon {
   height: 40px;
   width: 40px;
-  background-image: url("https://static.hsappstatic.net/bots-ui-app/ex/bot-avatar.jpg");
-  background-size: cover;
   margin-left: 10px;
   background-color: #FFF;
-  border-radius: 50%;
   border: 2px solid #FFF;
 }
 
@@ -723,9 +727,6 @@ footer .copyright {
   position: absolute;
   top: 20px;
   left: 20px;
-  border-radius: 50%;
-  background-image: url("https://static.hsappstatic.net/bots-ui-app/ex/bot-avatar.jpg");
-  background-size: cover;
 }
 
 .help-chat .chatMsg {
