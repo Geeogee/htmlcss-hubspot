@@ -140,7 +140,6 @@ body {
 }
 
 /* Dropdown menus*/
-
 .nav-dropdown-links {
   min-height: 300px;
   background-color: #FFF;
@@ -248,7 +247,6 @@ because of the high line-height (so they't aren't full bar height)*/
   text-decoration: none;
 }
 
-
 .search-access-container > * {
   margin: 0 10px;
 }
@@ -267,6 +265,7 @@ nav {
   background-color: #FFF;
 }
 
+/* Bigger dropdown are full nav width */
 nav .center-container {
   position: relative;
 }
@@ -297,6 +296,7 @@ img#logo {
   padding-left: 10px;
 }
 
+/* Small dropdowns take the li they refer width */
 #about {
   position: relative;
 }
