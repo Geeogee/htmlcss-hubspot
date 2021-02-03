@@ -16,7 +16,6 @@ body {
   display: table;
   clear: both;
 }
-
 /* Floated column */
 .column {
   float: left;
@@ -83,6 +82,12 @@ body {
   transform: translate(-50%,-50%);
 }
 
+.valign {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
 /* Containers */
 .center-container {
   width: 80%;
@@ -121,6 +126,10 @@ body {
   width: 70%;
 }
 
+.w100 {
+  width: 100%;
+}
+
 /* Header */
 .fixed-menu {
   position: fixed;
@@ -128,6 +137,32 @@ body {
   width: 100%;
   top: 0;
   left: 0;
+}
+
+
+/* In a div with height: 0, when borders meet they have triangular form. Borders that are useless have transparent background-color. The one we use has got a background color. */
+.triangle-label-border {
+    border-right: 11px solid transparent;
+    border-left: 11px solid transparent;
+    border-bottom: 11px solid #cbd6e2;
+    height: 0;
+    width: 0;
+    position: absolute;
+    top: -10px;
+    right: 10px;
+    z-index: 1;
+}
+
+.triangle-label {
+  border-right: 10px solid transparent;
+  border-left: 10px solid transparent;
+  border-bottom: 10px solid #FFF;
+  height: 0;
+  width: 0;
+  position: absolute;
+  top: -9px;
+  right: 11px;
+  z-index: 2;
 }
 
 /*Language - Contact - Login bar*/
@@ -140,11 +175,26 @@ body {
   border-bottom: 1px solid #6e808d;
 }
 
-.language {
-  color: inherit;
-  border-right: 2px solid #899397;
+.separator {
+  border-right: 3px solid #899397;
   padding-right: 20px;
 }
+
+.language {
+  float: left;
+  color: inherit;
+  position: relative;
+}
+
+.language li {
+  list-style-type: none;
+}
+
+.language a {
+  text-decoration: none;
+  color: inherit;
+}
+
 
 .contact-us {
   color: inherit;
@@ -157,8 +207,21 @@ body {
   text-transform: capitalize;
 }
 
+/* Container with login link */
 .search-access-container {
   float: right;
+}
+
+.search-access-container li {
+  float: left;
+  list-style-type: none;
+}
+
+/* Links in login nav bar are setted in display inline
+because of the high line-height (so they't aren't full bar height)*/
+.search-access-container a {
+  display: inline;
+  text-decoration: none;
 }
 
 .search-access-container > * {
@@ -169,11 +232,6 @@ body {
   color: #02a6bf;
 }
 
-/* Links in login nav bar are setted in display inline
-because of the high line-height (so they't aren't full bar height)*/
-.search-access-container a {
-  display: inline;
-}
 
 /* Nav */
 
@@ -183,6 +241,7 @@ nav {
   line-height: 75px;
   background-color: #FFF;
 }
+
 
 img#logo {
   height: 30px;
@@ -195,6 +254,7 @@ img#logo {
 
 .nav-links li {
   margin: 0 10px;
+  min-width: 80px;
   float: left;
   list-style-type: none;
 }
@@ -209,16 +269,32 @@ img#logo {
   padding-left: 10px;
 }
 
+
 /* Jumbotron */
 .jumbotron {
   height: 700px;
   width: 100%;
   margin-top: 150px;
   position: relative;
-  background-image: url("../img/jumbotron.png");
-  background-size: 100vw 100%;
-  background-repeat: no-repeat;
-  background-position: right;
+  background-image: linear-gradient(45deg, #fef8f0,#fff3ee,#fff1ee);
+}
+
+.jumbotron img {
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+
+.image-greenFeet {
+  height: 89px;
+  width: 100%;
+  background-color: #afebe4;
+  border: 4px solid #33475b;
+  border-left: 0;
+  border-right: 0;
+  position: absolute;
+  bottom: 0;
+  left: 0;
 }
 
 .jumbotron .text-container > * {
@@ -413,6 +489,10 @@ main {
 
 .section-getStarted .logo-container {
   margin-left: 50px;
+}
+
+.logo-container li {
+  list-style-type: none;
 }
 
 .section-getStarted .customer-logo {
