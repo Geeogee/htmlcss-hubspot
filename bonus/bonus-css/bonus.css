@@ -807,6 +807,10 @@ footer .copyright {
   padding-top: 10px;
 }
 
+.form-link .fa-hubspot {
+  color: #ff7a59;
+}
+
 .help-form a {
   color: #ff7a59;
   text-decoration: none;
